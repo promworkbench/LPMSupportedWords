@@ -1,10 +1,10 @@
-package org.processmining.newpackageivy.connections;
+package org.processmining.lpmsupportedwords.connections;
 
 import org.processmining.framework.connections.impl.AbstractConnection;
-import org.processmining.newpackageivy.models.YourFirstInput;
-import org.processmining.newpackageivy.models.YourOutput;
-import org.processmining.newpackageivy.models.YourSecondInput;
-import org.processmining.newpackageivy.parameters.YourParameters;
+import org.processmining.lpmsupportedwords.models.YourFirstInput;
+import org.processmining.lpmsupportedwords.models.YourOutput;
+import org.processmining.lpmsupportedwords.models.YourSecondInput;
+import org.processmining.lpmsupportedwords.parameters.YourParameters;
 
 public class YourConnection extends AbstractConnection {
 

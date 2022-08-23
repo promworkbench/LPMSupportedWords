@@ -1,10 +1,10 @@
-package org.processmining.newpackageivy.algorithms;
+package org.processmining.lpmsupportedwords.algorithms;
 
 import org.processmining.framework.plugin.PluginContext;
-import org.processmining.newpackageivy.models.YourFirstInput;
-import org.processmining.newpackageivy.models.YourOutput;
-import org.processmining.newpackageivy.models.YourSecondInput;
-import org.processmining.newpackageivy.parameters.YourParameters;
+import org.processmining.lpmsupportedwords.models.YourFirstInput;
+import org.processmining.lpmsupportedwords.models.YourOutput;
+import org.processmining.lpmsupportedwords.models.YourSecondInput;
+import org.processmining.lpmsupportedwords.parameters.YourParameters;
 
 public class YourAlgorithm {
 
