@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    font-size: 14px;
+    background: #F6F6F6;
+}        
+        
+table {
+    position: sticky;
+    top: 0;
+	border-collapse: collapse;
+    border-width: 0;
+    background: #FCFCFC;
+}
+
+tr:nth-child(even) {
+    background-color: #AAAAAA;
+}
+
+th {
+	text-align: center;
+    border: 1px solid #000000;
+    border-width: 0 1px 0 1px;
+    width: 44px;
+    padding: 0px;
+}
+
+td {
+    white-space: nowrap;
+    border: 1px solid #000000;
+    border-width: 0 1px 0 1px;
+}
+
+.num {
+	text-align: right;
+}
+
+canvas, div {
+	display: inline;
+}

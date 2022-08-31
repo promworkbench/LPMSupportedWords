@@ -16,6 +16,12 @@
     	<!-- ProM packages. -->
     	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
     	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ModelRepair" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Precision" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="AcceptingPetriNetMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="PNetAlignmentAnalysis" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="LogAlignment" rev="latest" changing="true" transitive="true" />
     	<!-- Third party libraries. These may span multiple lines. -->
     	<!-- Please uncomment the second line in the resolve target in your build.xml file
     	     if you have any third party libraries. -->
@@ -23,5 +29,6 @@
     	<!-- dependency conf="lib->default" org="org.reflections" name="reflections" rev="0.9.10" /-->
     	<!-- Third party library downloaded from ProM library. -->
     	<!-- dependency conf="lib->default" org="prom-libs" name="opencsv" rev="2.4-patched" transitive="false" /--> 
+    	<dependency conf="lib->default" org="com.google.guava" name="guava" rev="23.5-jre" />
     </dependencies>
 </ivy-module>
