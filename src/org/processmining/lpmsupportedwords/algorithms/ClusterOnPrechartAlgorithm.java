@@ -8,7 +8,7 @@ import org.deckfour.xes.model.XTrace;
 import org.processmining.framework.plugin.PluginContext;
 import org.processmining.log.models.EventLogArray;
 import org.processmining.log.models.impl.EventLogArrayFactory;
-import org.processmining.lpmsupportedwords.parameters.ClusterOnPrechartParameters;
+import org.processmining.lpmsupportedwords.parameters.DiscoverContextRichLPMsParameters;
 
 public class ClusterOnPrechartAlgorithm {
 
@@ -22,7 +22,7 @@ public class ClusterOnPrechartAlgorithm {
 	 * @return
 	 */
 	public static EventLogArray clusterOnPrechart(PluginContext context, XLog log,
-			ClusterOnPrechartParameters parameters) {
+			DiscoverContextRichLPMsParameters parameters) {
 		String logName = XConceptExtension.instance().extractName(log);
 		if (logName == null) {
 			logName = "Event Log";

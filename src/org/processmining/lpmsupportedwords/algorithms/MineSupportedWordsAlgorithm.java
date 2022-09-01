@@ -13,7 +13,7 @@ import org.deckfour.xes.model.XTrace;
 import org.processmining.framework.plugin.PluginContext;
 import org.processmining.lpmsupportedwords.models.ShortLog;
 import org.processmining.lpmsupportedwords.models.Word;
-import org.processmining.lpmsupportedwords.parameters.MineSupportedWordsParameters;
+import org.processmining.lpmsupportedwords.parameters.DiscoverContextRichLPMsParameters;
 
 import com.google.common.primitives.Shorts;
 
@@ -27,7 +27,7 @@ public class MineSupportedWordsAlgorithm {
 	 * @param parameters
 	 * @return
 	 */
-	public static XLog mineSupportedWords(PluginContext context, XLog log, MineSupportedWordsParameters parameters) {
+	public static XLog mineSupportedWords(PluginContext context, XLog log, DiscoverContextRichLPMsParameters parameters) {
 		ShortLog shortLog = new ShortLog(log, parameters.getClassifier());
 		int[] eventCounter = shortLog.getEventCounts();
 		boolean[] frequentEvents = new boolean[eventCounter.length];

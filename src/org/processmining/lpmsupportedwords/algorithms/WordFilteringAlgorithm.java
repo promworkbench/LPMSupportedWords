@@ -7,7 +7,7 @@ import org.deckfour.xes.model.XAttributeDiscrete;
 import org.deckfour.xes.model.XLog;
 import org.processmining.lpmsupportedwords.models.ShortLog;
 import org.processmining.lpmsupportedwords.models.Word;
-import org.processmining.lpmsupportedwords.parameters.WordFilteringParameters;
+import org.processmining.lpmsupportedwords.parameters.DiscoverContextRichLPMsParameters;
 
 public class WordFilteringAlgorithm {
 
@@ -20,7 +20,7 @@ public class WordFilteringAlgorithm {
 	 * @param parameters
 	 * @return
 	 */
-	public static XLog filterWords(XLog words, XLog log, WordFilteringParameters parameters) {
+	public static XLog filterWords(XLog words, XLog log, DiscoverContextRichLPMsParameters parameters) {
 		ShortLog shortLog = new ShortLog(log, parameters.getClassifier());
 		ShortLog shortWords = new ShortLog(words, shortLog);
 		List<Word> wordsList = new ArrayList<>();
@@ -39,7 +39,7 @@ public class WordFilteringAlgorithm {
 	 * @param parameters
 	 * @return
 	 */
-	public static XLog filterWords(XLog words, WordFilteringParameters parameters) {
+	public static XLog filterWords(XLog words, DiscoverContextRichLPMsParameters parameters) {
 		ShortLog shortWords = new ShortLog(words, parameters.getClassifier());
 		List<Word> wordsList = new ArrayList<>();
 		short[][] shortLog = shortWords.getLog();
