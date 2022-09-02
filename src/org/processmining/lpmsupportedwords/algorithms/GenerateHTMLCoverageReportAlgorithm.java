@@ -211,8 +211,8 @@ public class GenerateHTMLCoverageReportAlgorithm {
 		html.append("	];\r\n");
 		html.append("}\r\n\r\n");
 
-		//include script.js
-		appendResourceToStringBuilder("/script.js", html);
+		//include lpmcoverage.js
+		appendResourceToStringBuilder("/lpmcoverage.js", html);
 		html.append("		</script>\r\n");
 		html.append("	</head>\r\n");
 		html.append("	<body onload=\"load();\">\r\n");
